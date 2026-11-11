@@ -32,10 +32,10 @@ Mappls's Map SDK for iOS lets you easily add Mappls Map and web services to your
 ## [Version History](#Version-History)
 
 | Version | Dated | Description |
+| :------ | :---- | :---------- |
 | `6.0.2`| 23 July 2026 | - Bug fixes and improvementes. |
 | `6.0.1`| 17 July 2026 | - Bug fixes and improvementes |
 | `6.0.0`| 06 Jun 2025 | - Updated minimum iOS deployment target to 13.0 <br> - Authentication and authorization mechanisms have been revised. |
-| --- | --- | --- |
 
 ## [Setup your Project](#Setup-your-Project)
 
