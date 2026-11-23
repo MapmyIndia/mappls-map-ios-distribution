@@ -1,5 +1,14 @@
 # Changelog for Mappls Map SDK for iOS
 
+## 7.0.2
+
+### 🐞 Bug fixes
+
+- Fixed `#import <MapplsMap/MapplsMap.h>` failing with "file not found" in 7.0.1. The
+  framework contains `MapplsMap.h` again, as in 6.x, so Objective-C code written for 6.x
+  compiles without changes. `@import MapplsMap;` and Swift's `import MapplsMap` work as
+  before.
+
 ## 7.0.1
 
 ### ⬆️ Upgrading from 6.x
