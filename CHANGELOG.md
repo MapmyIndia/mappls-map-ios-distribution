@@ -1,5 +1,13 @@
 # Changelog for Mappls Map SDK for iOS
 
+## 7.0.3
+
+### 🐞 Bug fixes
+
+- Fixed a crash when `MapplsMapView` (or a subclass of it) is loaded from a storyboard or
+  XIB. In 7.0.1 and 7.0.2 the app stopped with "The underlying map is not available". Map
+  views created in code weren't affected.
+
 ## 7.0.2
 
 ### 🐞 Bug fixes

@@ -33,6 +33,7 @@
 
 | Version | Dated | Description |
 | :------ | :---- | :---------- |
+| `7.0.3`| 26 Nov 2026 | - Fixed a crash when `MapplsMapView` is loaded from a storyboard or XIB. |
 | `7.0.2`| 23 Nov 2026 | - Fixed `#import <MapplsMap/MapplsMap.h>` not found in 7.0.1. |
 | `7.0.1`| 19 Nov 2026 | - Updated map rendering engine, with performance improvements and bug fixes. <br> - CocoaPods: add the `MapplsAPICore` and `MapplsAPIKit` pods yourself, see [Installation](#installation). <br> - Added `BuildingMapPlugin` to hide and show 3D buildings. <br> - Added `getAvailableMapplsMapStyle()` to `MapplsMapView`. <br> - Fixed map labels in regional languages, such as Hindi, being shown on a single line. |
 | `6.0.1`| 23 July 2025 | - Added a provision to restrict setting the default style. |
@@ -56,7 +57,7 @@ The `MapplsMap` pod contains only the `MapplsMap` framework. Add the `MapplsAPIC
 
    target 'YourApp' do
      use_frameworks!
-     pod 'MapplsMap', '7.0.2'
+     pod 'MapplsMap', '7.0.3'
      pod 'MapplsAPICore', '1.0.18'
      pod 'MapplsAPIKit', '2.0.39'
    end
@@ -78,7 +79,7 @@ The `MapplsMap` package contains only the `MapplsMap` framework. It also needs `
 
 1. In Xcode, open your project and select **File > Add Package Dependencies…**.
 2. Paste `https://github.com/MapmyIndia/mappls-map-ios-distribution` into the search field.
-3. Set **Dependency Rule** to **Exact Version** `7.0.2` (or **Up to Next Major Version** from `7.0.2`) and click **Add Package**.
+3. Set **Dependency Rule** to **Exact Version** `7.0.3` (or **Up to Next Major Version** from `7.0.3`) and click **Add Package**.
 4. In the next dialog, add the `MapplsMap` library to your app target and click **Add Package**.
 5. Download and unzip [MapplsAPICore 1.0.18](https://mmi-api-team.s3.amazonaws.com/Mappls-SDKs/iOS_Legacy_Auth/MapplsAPICore/MapplsAPICore.xcframework-1.0.18.zip) and [MapplsAPIKit 2.0.39](https://mmi-api-team.s3.amazonaws.com/Mappls-SDKs/iOS_Legacy_Auth/MapplsAPIKit/MapplsAPIKit.xcframework-2.0.39.zip). Drag `MapplsAPICore.xcframework` and `MapplsAPIKit.xcframework` into your project, with **Copy items if needed** checked and your app target selected.
 6. Select your app target, open **General > Frameworks, Libraries, and Embedded Content**, check that `MapplsMap`, `MapplsAPICore` and `MapplsAPIKit` are all listed, and set `MapplsAPICore` and `MapplsAPIKit` to **Embed & Sign**.
